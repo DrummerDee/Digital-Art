@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(246, 234, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+}
+header{
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+    header span{
+        font-size: 1.5rem;
+        color: rgb(107, 107, 193);
+    }
+.frame {
+    background-color:#ddc;
+    border:solid 3vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:0.3rem;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 0 0 rgba(0,0,0,.25) inset, 0 0.5rem 1rem 0.5rem rgba(0,0,0,.25);
+    box-sizing:border-box; 
+    display:inline-block;
+    margin:1vh 1vw;
+    height:60vh;
+    padding:6vmin;
+    position:relative;
+    text-align:center;
+    margin: 1rem 0 1rem 0; 
+}
+    .frame:before {
+      border-radius:0.3rem;
+      bottom:-2vmin;
+      box-shadow:0 0.5rem 1rem 0 rgba(0,0,0,.25) inset;
+      content:"";
+      left:-2vmin;
+      position:absolute;
+      right:-2vmin;
+      top:-2vmin;
+    }
+    .frame:after {
+      border-radius:2px;
+      bottom:-2.5vmin;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.25);
+      content:"";
+      left:-2.5vmin;
+      position:absolute;
+      right:-2.5vmin;
+      top:-2.5vmin; 
+    }
+img{
+    border:solid 0.3rem;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
+    max-height:100%;
+    max-width:100%;
+}
+button{
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    background-color: rgb(184, 184, 169);
+    font-family: 'Crimson Text',sans-serif;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(107, 107, 193);
+    transition:all 0.3s;
+    color:white;
+}
+@media only screen and (max-width: 530px){
+    header{
+        padding-top: 2rem;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+}

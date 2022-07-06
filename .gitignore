@@ -1,0 +1,5 @@
+.history
+history/
+psuedotext.text
+node_modules
+.env

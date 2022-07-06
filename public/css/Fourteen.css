@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Crimson Text", "Fascinate", "cursive", sans-serif;
+  background-color: rgb(246, 234, 218);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+header h1 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+.header h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+}
+.click {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  background-color: rgb(184, 184, 169);
+  font-family: "Crimson Text", "Fascinate", "cursive", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.click:hover {
+  background-color: rgb(107, 107, 193);
+  transition: all 0.3s;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+.d4 {
+  position: relative;
+  max-height: 100%;
+  width: 75%;
+  overflow: auto;
+}
+.d5 {
+  height: 15rem;
+  padding: 1rem 5rem 5rem 1rem;
+  margin: auto 0;
+}
+
+.d4 {
+  background-color: rgb(211, 211, 240);
+  border: solid 3vmin rgb(123, 122, 122);
+  border-bottom-color: rgb(223, 218, 218);
+  border-left-color: rgb(169, 166, 166);
+  border-radius: 0.3rem;
+  border-right-color: rgb(174, 171, 171);
+  border-top-color: rgb(224, 221, 221);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3) inset,
+    0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 1vh 1vw;
+  height: 50vh;
+  padding: 1vmin;
+  position: relative;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#createBtn {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  margin: 0.2rem 0.5rem 0.5rem 0;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  background-color: rgb(184, 184, 169);
+  font-family: "Crimson Text", "Fascinate", "cursive", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+#createBtn:hover {
+  background-color: rgb(107, 107, 193);
+  transition: all 0.3s;
+  color: white;
+}
+#createText {
+  background-color: rgb(243, 241, 239);
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem 1rem 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#createText::placeholder {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#updateText {
+  background-color: rgb(243, 241, 239);
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem 1rem 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#updateText::placeholder {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+.comment > span {
+  list-style-type: none;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+#like,
+#del {
+  font-size: 1.2rem;
+}
+#like:hover,
+#del:hover {
+  color: rgb(107, 107, 193);
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.options {
+  padding-bottom: 0.5rem;
+}
+.hidden {
+  display: none;
+}
+
+.form-visible {
+  display: flex;
+}
+
+.visible {
+  display: inline-block;
+}
+
+#updateBtn {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  margin: 0.2rem 0.5rem 0.5rem 0;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  background-color: rgb(184, 184, 169);
+  font-family: "Crimson Text", "Fascinate", "cursive", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+#updateBtn:hover {
+  background-color: rgb(107, 107, 193);
+  transition: all 0.3s;
+  color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) and (max-width: 760px) {
+  #text {
+    background-color: rgb(243, 241, 239);
+    font-size: 1rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  #btn {
+    font-size: 0.8rem;
+    border-radius: 0.6rem;
+    margin: 0.2rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(184, 184, 169);
+    font-family: "Crimson Text", "Fascinate", "cursive", sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(246, 234, 218);
+    font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+}
+.header > h1{
+    font-size: 4rem;
+}
+.header > span {
+    font-size: 1.4rem;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+    #fish{
+        height: 89vh;
+        width: 40vw;
+    }
+p{
+    padding: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.buttons{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+    .button{
+      font-size: 1rem;
+      border-radius: 0.6rem;
+      margin: 1rem 0 1rem 0;
+      padding: 1rem 2rem 1rem 2rem;
+      background-color: rgb(184, 184, 169);
+      font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+      margin: 0 auto;
+      color: white;
+      cursor: pointer;
+      }
+      .button:hover {
+          background-color: rgb(107, 107, 193);
+          transition:all 0.3s;
+          color:white;
+      }

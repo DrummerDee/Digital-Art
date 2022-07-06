@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Fascinate&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/Fourteen.css">
+  <title>Digital Art-14</title>
+</head>
+
+<body>
+  <header>
+    <div class="buttons">
+      <button class="click" onclick="location.href='Bye'">Leave</button>
+      <button class="click" onclick="location.href='Hall'">Go Back </button>
+    </div>
+    <div class="header">
+      <h1>Room 14</h1>
+      <h3>Please leave your comments below</h3>
+    </div>
+  </header>
+  <section class="wrapper">
+    <ul class="comments d4 d5" id="comments">
+      <% for(let i=comment.length-1; i> -1; i--) {%>
+        <li data-commentid="<%= comment[i].id %>" class="comment">
+            <span> <%= comment[i].comment %></span>
+            <span>
+              <i id='like' class='fas fa-edit edit'></i>
+            </span>
+
+            <span><i id='del' class='fas fa-trash-alt' onclick="return confirm('Delete this comment?')"></i></span>
+        </li>
+        <% } %>
+    </ul>
+  </section>
+  <section class="input">
+    <form class="form-visible" id='form'>
+      <input name="comments" id="createText" placeholder="Comment here" required maxlength="35"/>
+      <button id='createBtn' type="submit">Add Comment</button>
+    </form>
+
+
+    <form class="hidden" id='updateCommmentForm'>
+      <input name="comments" id="updateText" placeholder= "Comment here" required maxlength="35"/>
+      <button id='updateBtn' type="submit">Update Comment</button>
+    </form>
+  </section>
+  <script src="js/Fourteen.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(246, 234, 218);
+    font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    padding-top: 4rem;
+    font-size: 4rem;
+}
+p{
+    padding-top: 4rem;
+    font-size: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+#last{
+    color:rgb(107, 107, 193) ;
+}
+#Twitter,#LinkedIn,#Github{
+    font-size: 4rem;
+    padding: 4rem 2rem 0 0;
+     text-decoration: none;
+     color: rgb(135, 135, 127);
+     cursor: pointer;
+}
+#Twitter:hover,#LinkedIn:hover,#Github:hover{
+    color: rgb(107, 107, 193);
+    transition:all 0.3s;
+}
+span{
+    font-style: italic;
+    font-weight: 300;
+}

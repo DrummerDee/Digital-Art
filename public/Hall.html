@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Hall.css">
+    <title>Digital Art-Hall</title>
+</head>
+
+<body>
+    <header>
+        <h1> The Great Hall</h1>
+    </header>
+    <div class="grid-item">
+        <div class="container">
+            <img class='images' src="Images/godspainting.jpeg" alt="" />
+            <div class="overlay">
+                <div class="text">
+                    <h3>Art Gallery</h3>
+                    <p> Look at the wonderful art pieces </p>
+                    <button class="txtbtn" onclick="location.href='Gallery'"> Enter </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img class='images' id="comment" src="Images/comment.jpeg" alt="" />
+            <div class="overlay">
+                <div class="text">
+                    <h3>Room 14</h3>
+                    <p> Leave your opinion before you go </p>
+                    <button class="txtbtn" onclick="location.href='Fourteen'">Enter </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exit">
+        <button class="exitbtn" onclick="location.href='Bye'">Leave</button>
+    </div>
+    <script src="js/Gallery.js"></script>
+</body>
+
+</html>
