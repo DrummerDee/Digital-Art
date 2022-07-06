@@ -45,8 +45,7 @@
 
 ### Optimizations
 * Add the option to like and reply to specific comments 
-* Add the ability to create an account and upload personal art 
-* Better response to larger sized art 
+* Add the ability to create an account and upload personal art  
 * Mobile responsive 
 * Use browser developer tools that help to debug browser compatability tests
 
