@@ -5,11 +5,11 @@
   /* Sets rem to approx 10rem */
   margin: 0;
   padding: 0;
+  font-family: 'Crimson Text', 'Fascinate', 'cursive', sans-serif;
 }
 
 body {
   background-color: rgb(246, 234, 218);
-  font-family: 'Crimson Text', 'Fascinate', 'cursive', sans-serif;
 }
 
 header,
