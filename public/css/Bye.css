@@ -4,7 +4,7 @@
 }
 body{
     background-color: rgb(246, 234, 218);
-    font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+    font-family: 'Crimson Text','Fascinate',sans-serif;
 }
 main{
     display: flex;
@@ -46,7 +46,7 @@ and (min-width: 100px)
 and (max-width: 600px)
 and (-webkit-min-device-pixel-ratio: 2){
     *{
-        font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+        font-family: "Crimson Text", "Fascinate", sans-serif;
         box-sizing: border-box;
         margin: 0;
     }
