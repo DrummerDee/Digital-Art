@@ -41,12 +41,11 @@
 
 
 ## What was learned 
-* With this project, you are able to create a CRUD application with a database.   
+* With this project, you are able to create a Full-stack CRUD application using a Mongo database.   
 
 ### Optimizations
 * Add the option to like and reply to specific comments 
 * Add the ability to create an account and upload personal art  
-* Mobile responsive 
 * Use browser developer tools that help to debug browser compatability tests
 
 ## Prerequisites 
