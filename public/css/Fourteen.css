@@ -147,12 +147,12 @@ form {
   font-size: 2rem;
   padding-left: 0.5rem;
 }
-#like,
-#del {
+.edit,
+.del {
   font-size: 1.2rem;
 }
-#like:hover,
-#del:hover {
+.edit:hover,
+.del:hover {
   color: rgb(107, 107, 193);
   transition: ease 0.3s;
   cursor: pointer;

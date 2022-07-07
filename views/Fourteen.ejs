@@ -31,10 +31,10 @@
         <li data-commentid="<%= comment[i].id %>" class="comment">
             <span> <%= comment[i].comment %></span>
             <span>
-              <i id='like' class='fas fa-edit edit'></i>
+              <i class='like fas fa-edit edit'></i>
             </span>
 
-            <span><i id='del' class='fas fa-trash-alt' onclick="return confirm('Delete this comment?')"></i></span>
+            <span><i class='del fas fa-trash-alt' onclick="return confirm('Delete this comment?')"></i></span>
         </li>
         <% } %>
     </ul>
