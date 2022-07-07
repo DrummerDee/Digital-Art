@@ -88,7 +88,12 @@ button:hover {
     transition:all 0.3s;
     color:white;
 }
-@media only screen and (max-width: 530px){
+
+/* phones */
+@media only screen
+and (min-width: 100px) 
+and (max-width: 900px)
+and (-webkit-min-device-pixel-ratio: 2) { 
     header{
         padding-top: 2rem;
         font-size: 1rem;
@@ -97,5 +102,57 @@ button:hover {
         justify-content: center;
         align-items: center;
         max-width: 100%;
+    }
+    .frame {
+        background-color: #ddc;
+        border: solid 3vmin #eee;
+        border-bottom-color: #fff;
+        border-left-color: #eee;
+        border-radius: 0.3rem;
+        border-right-color: #eee;
+        border-top-color: #ddd;
+        box-shadow: 0 0 0 0 rgb(0 0 0 / 25%) inset, 0 0.5rem 1rem 0.5rem rgb(0 0 0 / 25%);
+        padding: 6vmin;
+        position: relative;
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+        height: 5%;
+}
+button{
+    font-size: 2rem;
+    border-radius: 0.6rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    background-color: rgb(184, 184, 169);
+    font-family: 'Crimson Text',sans-serif;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(107, 107, 193);
+    transition:all 0.3s;
+    color:white;
+}
+
+  }
+/* Large screens */
+@media only screen
+and (min-width: 1000px) 
+and (max-width: 1500px)
+and (-webkit-min-device-pixel-ratio: 2){
+    button{
+        font-size: 3rem;
+        border-radius: 0.6rem;
+        margin: 1rem 0 1rem 0;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+        background-color: rgb(184, 184, 169);
+        font-family: 'Crimson Text',sans-serif;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(107, 107, 193);
+        transition:all 0.3s;
+        color:white;
     }
 }

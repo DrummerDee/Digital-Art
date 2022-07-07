@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family:'Fascinate',  sans-serif;
+    font-family:'Crimson Text','Fascinate',  sans-serif;
     margin: 0;
 }
 body{
@@ -57,3 +57,47 @@ p{
           transition:all 0.3s;
           color:white;
       }
+/* phones */
+@media only screen
+and (min-width: 100px) 
+and (max-width: 600px)
+and (-webkit-min-device-pixel-ratio: 2){
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    *{
+        box-sizing: border-box;
+        font-family:'Crimson Text','Fascinate',  sans-serif;
+        margin: 0;
+    }
+    .header > h1{
+        font-size: 3rem;
+        padding: 0 2rem 0 2rem;
+    }
+    .header > span {
+        font-size: 1rem;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+        
+        #fish,#bike{
+            height: 50vh;
+            width: 60vw;
+        }
+    p {
+        width: 80vw;
+        margin: auto 2rem;  
+        }
+
+}
+/* Media queries for tablets and ipads */
+@media only screen 
+and (min-width: 600px) 
+and (max-width: 900px)
+and (-webkit-min-device-pixel-ratio: 2){}

@@ -40,3 +40,31 @@ span{
     font-style: italic;
     font-weight: 300;
 }
+/* phones */
+@media only screen
+and (min-width: 100px) 
+and (max-width: 600px)
+and (-webkit-min-device-pixel-ratio: 2){
+    *{
+        font-family: 'Crimson Text','Fascinate','cursive',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    span{
+        font-size: 1rem;
+    }
+    p {
+        width: 80vw;
+        margin: auto 2rem;  
+        padding-top: 1rem;
+        }
+    .socials{
+        padding: 2rem 0 2rem 0;
+    }
+    #quote{
+        padding-bottom: 2rem;
+        font-size: 0.7rem;
+
+       
+    }
+}

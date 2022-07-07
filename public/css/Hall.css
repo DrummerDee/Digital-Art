@@ -19,22 +19,6 @@ header,
   font-size: 6rem;
 }
 
-.pages {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.pages > a {
-  text-decoration: none;
-  color: black;
-  margin-left: 1rem;
-  font-weight: 300;
-}
-
-.pages > a:hover {
-  color: rgb(100, 100, 217);
-}
-
 .grid-containers {
   width: 40vw;
   height: 45vh;
@@ -48,11 +32,6 @@ header,
   flex-wrap: wrap;
   align-content: center;
   gap: 0.8rem;
-}
-
-p {
-  font-size: 1.6rem;
-  font-weight: 400;
 }
 
 .images {
@@ -129,7 +108,10 @@ p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 300px) {
+@media only screen 
+and (min-width: 100px) 
+and (max-width: 900px)
+and (-webkit-min-device-pixel-ratio: 2){
   * {
     box-sizing: border-box;
     overflow: hidden;
@@ -140,35 +122,16 @@ p {
   .exit {
     text-align: center;
     margin-top: 4rem;
-    margin-bottom: 0.2rem;
     font-size: 8rem;
   }
-
-  .grid-containers {
-    width: 40vw;
-    height: 45vh;
-  }
-
-  .grid-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    /* gap: 0.8rem; */
+  .exit{
+    margin-top: 0.5rem;
   }
 
   p {
     font-size: 2rem;
     font-weight: 400;
   }
-  .images {
-    display: block;
-    height: 70vh;
-    position: relative;
-  }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -183,12 +146,20 @@ p {
     border: 0.5rem solid black;
     cursor: pointer;
   }
-
-.container {
+.images{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.grid-item {
+ display: flex;
+ flex-direction: column;
+}
+.container{
+  width: 40vh;
+  height: 30vh;
   position: relative;
-  margin-top: 5rem;
-  width: 40vw;
-  height: 50vh;
+  margin: 1rem;
 }
 
   .container:hover .overlay {
@@ -210,7 +181,6 @@ p {
   .txtbtn {
     font-size: 1.8rem;
     border-radius: 0.6rem;
-    margin: 1rem 0 1rem 0;
     padding: 1rem 2rem 1rem 2rem;
     background-color: rgb(184, 184, 169);
     font-family: 'Crimson Text', 'Fascinate', 'cursive', sans-serif;
@@ -235,8 +205,4 @@ p {
     color: white;
     cursor: pointer;
   }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .example {background: green;}
 }
