@@ -86,7 +86,8 @@ and (-webkit-min-device-pixel-ratio: 2){
         gap: 1rem;
     }
         
-        #fish,#bike{
+        #fish,
+        #bike{
             height: 50vh;
             width: 60vw;
         }

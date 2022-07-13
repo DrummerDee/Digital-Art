@@ -73,7 +73,6 @@ MongoClient.connect(dbConnectionStr, {
     commentCollection
       .insertOne(req.body)
       .then((results) => {
-        console.log("Comment added");
         res.redirect("/Fourteen");
         console.log(results);
       })
@@ -88,8 +87,6 @@ MongoClient.connect(dbConnectionStr, {
         { _id: ObjectId(id) },
         { $set: { comments: comment } }
       );
-      console.log('comment edited')
-      // res.statusCode = 200;
       res.send().json(result);
     } catch (err) {
       console.error(err);
@@ -101,7 +98,6 @@ MongoClient.connect(dbConnectionStr, {
   app.delete("/deleteComment", (req, res) => {
     db.collection("comments").deleteOne({ comments: req.body.comments})
       .then((result) => {
-        console.log("Comment Deleted");
         res.json("Comment Deleted");
       })
       .catch((error) => console.error(error));
