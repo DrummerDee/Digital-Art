@@ -24,6 +24,7 @@
 
 ## Built With 
 * Node.js
+* Express
 * Html
 * CSS
 * Javascript
@@ -50,7 +51,7 @@
 * Use cloudinary and lazy loading for better optimized pictures
 
 ## Prerequisites 
-<h3> Install node.js</h3>
+<h3> Install Node </h3>
 
 [How to Install Node](https://nodejs.org/en/) 
 
