@@ -27,8 +27,8 @@
 * Express
 * Html
 * CSS
-* Javascript
-* Swiperjs
+* JavaScript
+* Swiper
 * MongoDB
 * Heroku
 
